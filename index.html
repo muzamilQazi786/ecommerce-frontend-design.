@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce Homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="logo-container" style="display: inline-flex; align-items: center;">
+      <img src="Brand/logo-symbol.png" alt="Brand Logo" style="width:40px; height:40px; background:none; border-radius:10px; padding:5px; margin-right:8px;">
+      <span class="logo">Brand</span>
+    </div>
+    <form class="search-group" role="search">
+      <input type="text" placeholder="Search" class="search-bar" aria-label="Search products">
+      <select class="category-select" aria-label="Select category">
+        <option>All category</option>
+        <option value="">Automobiles</option>
+      </select>
+      <button class="search-button" type="submit" style="display: flex; align-items: center; gap: 5px;">Search</button>
+    </form>
+    <nav class="user-menu" aria-label="User menu">
+      <a href="#"><span style="display: flex; color: #000;flex-direction: column; align-items: center;"><span style="font-size:22px;"><img src="Brand/profile.png" alt="Profile"></span><span style="font-size:14px; margin-top:2px;">Profile</span></span></a>
+      <a href="#"><span style="display: flex; color: #000;flex-direction: column; align-items: center;"><span style="font-size:22px;"><img src="Brand/msg.png" alt="Message"></span><span style="font-size:14px; margin-top:2px;">Message</span></span></a>
+      <a href="#"><span style="display: flex; color: #000;flex-direction: column; align-items: center;"><span style="font-size:22px;"><img src="Brand/fav.png" alt="Orders"></span><span style="font-size:14px; margin-top:2px;">Orders</span></span></a>
+      <a href="#"><span style="display: flex; color: #000;flex-direction: column; align-items: center;"><span style="font-size:22px;"><img src="Brand/cart.png" alt="My cart"></span><span style="font-size:14px; margin-top:2px;">My cart</span></span></a>
+    </nav>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <ul>
+      <li style="display: flex; align-items: center; color: #000; font-weight: 500;">
+        <span style="display:inline-block; margin-right:6px;">
+          <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;"><rect y="2" width="22" height="2" rx="1" fill="#222"/><rect y="8" width="22" height="2" rx="1" fill="#222"/><rect y="14" width="22" height="2" rx="1" fill="#222"/></svg>
+        </span>
+        All category
+      </li>
+      <li style="color: #000;">Hot offers</li>
+      <li style="color: #000;">Gift boxes</li>
+      <li style="color: #000;">Projects</li>
+      <li style="color: #000;">Menu item</li>
+      <li style="color: #000;">
+        <select class="help-select" style="border:none; background:transparent; font:inherit; color:#000;" aria-label="Help">
+          <option>Help</option>
+          <option>FAQ</option>
+          <option>Contact</option>
+        </select>
+      </li>
+    </ul>
+    <div class="lang-currency" style="display: flex; align-items: center; gap: 18px;">
+      <select class="currency-select" aria-label="Language and currency">
+        <option>English,USD</option>
+        <option>French,EUR</option>
+        <option>German,GBP</option>
+      </select>
+      <div class="custom-dropdown">
+        <div class="dropdown-header">
+          <span>Ship to:China</span>
+          <img src="Brand/china.png" alt="china flag" class="flag-icon">
+        </div>
+        <div class="dropdown-content">
+          <div class="dropdown-item" data-value="UAE">
+            <img src="Brand/UAE.png" alt="UAE flag" class="flag-icon">
+            <span>UAE</span>
+          </div>
+          <div class="dropdown-item" data-value="Russia">
+            <img src="Brand/russia.png" alt="Russia flag" class="flag-icon">
+            <span>Russia</span>
+          </div>
+          <div class="dropdown-item" data-value="UK">
+            <img src="Brand/UK.png" alt="UK flag" class="flag-icon">
+            <span>UK</span>
+          </div>
+          <div class="dropdown-item" data-value="Italy">
+            <img src="Brand/Italy.png" alt="Italy flag" class="flag-icon">
+            <span>Italy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Main Banner -->
+    <section class="main-banner" aria-label="Main banner">
+      <aside class="categories">
+        <ul>
+          <li>Automobiles</li>
+          <li>Clothes and wear</li>
+          <li>Home interiors</li>
+          <li>Computer and tech</li>
+          <li>Tools, equipments</li>
+          <li>Sports and outdoor</li>
+          <li>Animal and pets</li>
+          <li>Machinery tools</li>
+          <li>More category</li>
+        </ul>
+      </aside>
+      <div class="promo">
+        <h2>Latest trending <br> Electronic items</h2>
+        <button>Learn more</button>
+      </div>
+      <aside class="user-options">
+        <div class="user-greeting" style="display: flex; align-items: center; gap: 12px;">
+          <img src="Brand/Avatar.png" alt="User avatar">
+          <span>
+            Hi, user<br>
+            let’s get stated
+          </span>
+        </div>
+        <button class="join-now-btn">Join now</button>
+        <button class="login-btn">Log in</button>
+        <div class="offer-btn">Get US $10 off<br>with a new supplier</div>
+        <div class="quotes-btn">Send quotes with<br>supplier preferences</div>
+      </aside>
+    </section>
+
+    <!-- Deals Section -->
+    <section class="deals" aria-labelledby="deals-title">
+      <header class="deals-header">
+        <h3 id="deals-title">Deals and offers</h3>
+        <div class="deals-subtitle">Hygiene equipments</div>
+      </header>
+      <div class="deals-content">
+        <div class="deal-timer" aria-label="Deal countdown timer">
+          <div class="timer-block"><span>04</span><small>Days</small></div>
+          <div class="timer-block"><span>13</span><small>Hour</small></div>
+          <div class="timer-block"><span>34</span><small>Min</small></div>
+          <div class="timer-block"><span>56</span><small>Sec</small></div>
+        </div>
+        <div class="deal-items">
+          <article class="deal-item">
+            <img src="Image/tech/8.jpg" alt="Smart watches">
+            <div class="deal-name">Smart watches</div>
+            <div class="deal-badge">-25%</div>
+          </article>
+          <article class="deal-item">
+            <img src="Image/tech/7.jpg" alt="Laptops">
+            <div class="deal-name">Laptops</div>
+            <div class="deal-badge">-15%</div>
+          </article>
+          <article class="deal-item">
+            <img src="Image/tech/6.jpg" alt="GoPro cameras">
+            <div class="deal-name">GoPro cameras</div>
+            <div class="deal-badge">-40%</div>
+          </article>
+          <article class="deal-item">
+            <img src="Image/tech/5.jpg" alt="Headphones">
+            <div class="deal-name">Headphones</div>
+            <div class="deal-badge">-25%</div>
+          </article>
+          <article class="deal-item">
+            <img src="Image/tech/3.jpg" alt="Canon cameras">
+            <div class="deal-name">Canon cameras</div>
+            <div class="deal-badge">-25%</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Grid Sections -->
+    <section class="product-sections" aria-label="Home and outdoor">
+      <article class="product-card" style="position: relative; overflow: hidden;">
+        <img src="Image/bg2.png" alt="Home and outdoor background" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+        <div class="product-card-bg" style="position: relative; background: transparent; min-height: 360px; z-index: 1;">
+          <div style="position: relative; z-index: 2;">
+            <h4>Home and outdoor</h4>
+            <button class="source-btn">Source now</button>
+          </div>
+        </div>
+      </article>
+      <div class="products-grid">
+        <article class="product-item">
+          <div class="product-title">Soft chairs</div>
+          <div class="product-price">From<br><span>USD 19</span></div>
+          <img src="Image/interior/1.jpg" alt="Soft chairs">
+        </article>
+        <article class="product-item">
+          <div class="product-title">Sofa & chair</div>
+          <div class="product-price">From<br><span>USD 19</span></div>
+          <img src="Image/interior/2.jpg" alt="Sofa & chair">
+        </article>
+        <article class="product-item">
+          <div class="product-title">Kitchen dishes</div>
+          <div class="product-price">From<br><span>USD 19</span></div>
+          <img src="Image/interior/7.jpg" alt="Kitchen dishes">
+        </article>
+        <article class="product-item">
+          <div class="product-title">Smart watches</div>
+          <div class="product-price">From<br><span>USD 19</span></div>
+          <img src="Image/tech/8.jpg" alt="Smart watches">
+        </article>
+        <article class="product-item">
+          <div class="product-title">Kitchen mixer</div>
+          <div class="product-price">From<br><span>USD 100</span></div>
+          <img src="Image/interior/9.jpg" alt="Kitchen mixer">
+        </article>
+        <article class="product-item">
+          <div class="product-title">Blenders</div>
+          <div class="product-price">From<br><span>USD 39</span></div>
+          <img src="Image/interior/9.jpg" alt="Blenders">
+        </article>
+        <article class="product-item">
+          <div class="product-title">Home appliance</div>
+          <div class="product-price">From<br><span>USD 19</span></div>
+          <img src="Image/interior/10.jpg" alt="Home appliance">
+        </article>
+        <article class="product-item">
+          <div class="product-title">Coffee maker</div>
+          <div class="product-price">From<br><span>USD 10</span></div>
+          <img src="Image/interior/8.jpg" alt="Coffee maker">
+        </article>
+      </div>
+    </section>
+
+    <!-- Consumer Electronics Section -->
+    <section class="product-sections" aria-label="Consumer electronics and gadgets">
+      <article class="product-card" style="position: relative; overflow: hidden;">
+        <img src="Image/bg3.png" alt="Consumer electronics background" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
+        <div class="product-card-bg" style="position: relative; background: transparent; min-height: 360px; z-index: 1;">
+          <div style="position: relative; z-index: 2;">
+            <h4>Consumer electronics and gadgets</h4>
+            <button class="source-btn">Source now</button>
+          </div>
+        </div>
+      </article>
+      <div class="products-grid">
+        <article class="product-item">
+          <div class="product-title">Smart watches</div>
+          <div class="product-price">From<br><span>USD 19</span></div>
+          <img src="Image/tech/8.jpg" alt="Smart watches">
+        </article>
+        <article class="product-item">
+          <div class="product-title">Cameras</div>
+          <div class="product-price">From<br><span>USD 89</span></div>
+          <img src="Image/tech/6.jpg" alt="Cameras">
+        </article>
+        <article class="product-item">
+          <div class="product-title">Headphones</div>
+          <div class="product-price">From<br><span>USD 10</span></div>
+          <img src="Image/tech/9.jpg" alt="Headphones">
+        </article>
+        <article class="product-item">
+          <div class="product-title">Smart watches</div>
+          <div class="product-price">From<br><span>USD 90</span></div>
+          <img src="Image/tech/8.jpg" alt="Smart watches">
+        </article>
+        <article class="product-item">
+          <div class="product-title">Gaming set</div>
+          <div class="product-price">From<br><span>USD 35</span></div>
+          <img src="Image/tech/5.jpg" alt="Gaming set">
+        </article>
+        <article class="product-item">
+          <div class="product-title">Laptops & PC</div>
+          <div class="product-price">From<br><span>USD 340</span></div>
+          <img src="Image/tech/7.jpg" alt="Laptops & PC">
+        </article>
+        <article class="product-item">
+          <div class="product-title">Smartphones</div>
+          <div class="product-price">From<br><span>USD 19</span></div>
+          <img src="Image/tech/1.jpg" alt="Smartphones">
+        </article>
+        <article class="product-item">
+          <div class="product-title">Electric kattle</div>
+          <div class="product-price">From<br><span>USD 240</span></div>
+          <img src="Image/tech/10.jpg" alt="Electric kattle">
+        </article>
+      </div>
+    </section>
+
+    <!-- Supplier Quote Form -->
+    <section class="supplier-request" aria-label="Supplier quote form">
+      <div class="supplier-bg" style="position: relative; overflow: hidden;">
+        <img src="Image/bg4.png" alt="Supplier background" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.15; z-index: 0;">
+        <div class="supplier-info" style="position: relative; z-index: 1;">
+          <h2>An easy way to send<br>requests to all suppliers</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+        </div>
+        <form class="supplier-form-card" style="position: relative; z-index: 1;">
+          <h3>Send quote to suppliers</h3>
+          <input type="text" placeholder="What item you need?">
+          <textarea placeholder="Type more details"></textarea>
+          <div class="supplier-form-row">
+            <input type="number" placeholder="Quantity">
+            <select><option>Pcs</option></select>
+          </div>
+          <button type="submit">Send inquiry</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Recommended Items -->
+    <section class="recommended" aria-label="Recommended items">
+      <h3>Recommended items</h3>
+      <div class="items-grid">
+        <article class="item-card">
+          <img src="Image/cloth/2.jpg" alt="T-shirts">
+          <div class="item-price">$10.30</div>
+          <div class="item-desc">T-shirts with multiple colors, for men</div>
+        </article>
+        <article class="item-card">
+          <img src="Image/cloth/4.jpg" alt="Jeans shorts">
+          <div class="item-price">$10.30</div>
+          <div class="item-desc">Jeans shorts for men blue color</div>
+        </article>
+        <article class="item-card">
+          <img src="Image/cloth/3.jpg" alt="Brown winter coat">
+          <div class="item-price">$12.50</div>
+          <div class="item-desc">Brown winter coat medium size</div>
+        </article>
+        <article class="item-card">
+          <img src="Image/cloth/5.jpg" alt="Jeans bag">
+          <div class="item-price">$34.00</div>
+          <div class="item-desc">Jeans bag for travel for men</div>
+        </article>
+        <article class="item-card">
+          <img src="Image/cloth/6.jpg" alt="Leather wallet">
+          <div class="item-price">$99.00</div>
+          <div class="item-desc">Leather wallet</div>
+        </article>
+        <article class="item-card">
+          <img src="Image/tech/6.jpg" alt="Canon camera">
+          <div class="item-price">$9.99</div>
+          <div class="item-desc">Canon camera black, 100x zoom</div>
+        </article>
+        <article class="item-card">
+          <img src="Image/tech/5.jpg" alt="Headset">
+          <div class="item-price">$8.99</div>
+          <div class="item-desc">Headset for gaming with mic</div>
+        </article>
+        <article class="item-card">
+          <img src="Image/tech/8.jpg" alt="Smartwatch">
+          <div class="item-price">$10.30</div>
+          <div class="item-desc">Smartwatch silver color modern</div>
+        </article>
+        <article class="item-card">
+          <img src="Image/interior/6.jpg" alt="Blue wallet">
+          <div class="item-price">$10.30</div>
+          <div class="item-desc">Lamp for lights</div>
+        </article>
+        <article class="item-card">
+          <img src="Image/interior/5.jpg" alt="Bed">
+          <div class="item-price">$80.95</div>
+          <div class="item-desc">Bed for family</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Extra Services -->
+    <section class="services" aria-label="Extra services">
+      <article class="service-card">
+        <img class="service-bg" src="Image/bg8.png" alt="Industry Hubs">
+        <div class="service-content">
+          <span class="service-icon">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#ffffff;overflow:hidden;">
+              <img src="Brand/17489774.gif" alt="Service Icon" style="width:40px;height:40px;object-fit:contain;" />
+            </span>
+          </span>
+          <div class="service-title">Source from<br>Industry Hubs</div>
+        </div>
+      </article>
+      <article class="service-card">
+        <img class="service-bg" src="Image/bg6.png" alt="Customize">
+        <div class="service-content">
+          <span class="service-icon">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#ffffff;overflow:hidden;">
+              <img src="Brand/18300006.gif" alt="Service Icon" style="width:40px;height:40px;object-fit:contain;" />
+            </span>
+          </span>
+            <div class="service-title">Customize Your<br>Products</div>
+        </div>
+      </article>
+      <article class="service-card">
+        <img class="service-bg" src="Image/bg7.png" alt="Shipping">
+        <div class="service-content">       
+          <span class="service-icon">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#ffffff;overflow:hidden;">
+              <img src="Brand/19008012.gif" alt="Service Icon" style="width:40px;height:40px;object-fit:contain;" />
+            </span>
+          </span>
+          <div class="service-title">Fast, reliable shipping<br>by ocean or air</div>
+        </div>
+      </article>
+      <article class="service-card">
+        <img class="service-bg" src="Image/bg5.png" alt="Inspection">
+        <div class="service-content">
+          <span class="service-icon">
+            <span style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;background:#ffffff;overflow:hidden;">
+              <img src="Brand/6569127.gif" alt="Service Icon" style="width:40px;height:40px;object-fit:contain;" />
+            </span>
+          </span>
+          <div class="service-title">Product monitoring<br>and inspection</div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Suppliers by Region -->
+    <section class="suppliers-region" aria-label="Suppliers by region">
+      <h4>Suppliers by region</h4>
+      <div class="suppliers-grid">
+        <article class="supplier-item">
+          <img src="Brand/UAE.png" alt="UAE Flag" class="flag-img">
+          <div>
+            <div class="country-name">Arabic Emirates</div>
+            <div class="shop-url">shopname.ae</div>
+          </div>
+        </article>
+        <article class="supplier-item">
+          <img src="Brand/AUS.png" alt="Australia Flag" class="flag-img">
+          <div>
+            <div class="country-name">Australia</div>
+            <div class="shop-url">shopname.ae</div>
+          </div>
+        </article>
+        <article class="supplier-item">
+          <img src="Brand/US.png" alt="USA Flag" class="flag-img">
+          <div>
+            <div class="country-name">United States</div>
+            <div class="shop-url">shopname.ae</div>
+          </div>
+        </article>
+        <article class="supplier-item">
+          <img src="Brand/russia.png" alt="Russia Flag" class="flag-img">
+          <div>
+            <div class="country-name">Russia</div>
+            <div class="shop-url">shopname.ru</div>
+          </div>
+        </article>
+        <article class="supplier-item">
+          <img src="Brand/Italy.png" alt="Italy Flag" class="flag-img">
+          <div>
+            <div class="country-name">Italy</div>
+            <div class="shop-url">shopname.it</div>
+          </div>
+        </article>
+        <article class="supplier-item">
+          <img src="Brand/Denmark.png" alt="Denmark Flag" class="flag-img">
+          <div>
+            <div class="country-name">Denmark</div>
+            <div class="shop-url">denmark.com.dk</div>
+          </div>
+        </article>
+        <article class="supplier-item">
+          <img src="Brand/France.png" alt="France Flag" class="flag-img">
+          <div>
+            <div class="country-name">France</div>
+            <div class="shop-url">shopname.com.fr</div>
+          </div>
+        </article>
+        <article class="supplier-item">
+          <img src="Brand/china.png" alt="China Flag" class="flag-img">
+          <div>
+            <div class="country-name">China</div>
+            <div class="shop-url">shopname.ae</div>
+          </div>
+        </article>
+        <article class="supplier-item">
+          <img src="Brand/UK.png" alt="UK Flag" class="flag-img">
+          <div>
+            <div class="country-name">Great Britain</div>
+            <div class="shop-url">shopname.co.british</div>
+          </div>
+        </article>
+        <article class="supplier-item">
+          <img src="Brand/UK.png" alt="UK Flag" class="flag-img">
+          <div>
+            <div class="country-name">United Kingdom</div>
+            <div class="shop-url">shopname.co.uk</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter-section" aria-label="Newsletter subscription">
+      <h2 class="newsletter-title">Subscribe on our newsletter</h2>
+      <p class="newsletter-desc">Get daily news on upcoming offers from many suppliers all over the world</p>
+      <form class="newsletter-form">
+        <span class="newsletter-input-wrapper">
+          <img src="Brand/8717946.gif" alt="Service Icon" style="width:20px;height:20px;object-fit:contain;" />
+          <input type="email" placeholder="Email" required class="newsletter-input" aria-label="Email address" />
+        </span>
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-new" role="contentinfo">
+    <div class="footer-main">
+      <div class="footer-brand-col">
+        <div class="footer-brand-logo-row">
+          <img src="Brand/logo-symbol.png" alt="Brand Logo" class="footer-logo-img">
+          <span class="footer-brand-name">Brand</span>
+        </div>
+        <div class="footer-brand-desc">Best information about the company<br>goes here but now lorem ipsum is</div>
+        <div class="footer-social-row">
+          <a href="#"><img src="Brand/facebook3.png" alt="Facebook" class="footer-social-icon"></a>
+          <a href="#"><img src="Brand/Fill 184.png" alt="Twitter" class="footer-social-icon"></a>
+          <a href="#"><img src="Brand/linkedin3.png" alt="LinkedIn" class="footer-social-icon"></a>
+          <a href="#"><img src="Brand/instagram3.png" alt="Instagram" class="footer-social-icon"></a>
+          <a href="#"><img src="Brand/youtube3.png" alt="YouTube" class="footer-social-icon"></a>
+        </div>
+      </div>
+      <nav class="footer-links-col" aria-label="About">
+        <div class="footer-links-title">About</div>
+        <a href="#">About Us</a>
+        <a href="#">Find store</a>
+        <a href="#">Categories</a>
+        <a href="#">Blogs</a>
+      </nav>
+      <nav class="footer-links-col" aria-label="Partnership">
+        <div class="footer-links-title">Partnership</div>
+        <a href="#">About Us</a>
+        <a href="#">Find store</a>
+        <a href="#">Categories</a>
+        <a href="#">Blogs</a>
+      </nav>
+      <nav class="footer-links-col" aria-label="Information">
+        <div class="footer-links-title">Information</div>
+        <a href="#">Help Center</a>
+        <a href="#">Money Refund</a>
+        <a href="#">Shipping</a>
+        <a href="#">Contact us</a>
+      </nav>
+      <nav class="footer-links-col" aria-label="For users">
+        <div class="footer-links-title">For users</div>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+        <a href="#">Settings</a>
+        <a href="#">My Orders</a>
+      </nav>
+      <div class="footer-app-col">
+        <div class="footer-links-title">Get app</div>
+        <a href="#"><img src="Brand/market-button.png" alt="App Store" class="footer-app-btn"></a>
+        <a href="#"><img src="Brand/Logo.png" alt="Google Play" class="footer-app-btn"></a>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-copyright">© 2023 Ecommerce.</div>
+      <div class="footer-lang-select">
+        <img src="Brand/US.png" alt="English" class="footer-lang-flag">
+        <span>English</span>
+        <span class="footer-lang-caret">&#9660;</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
