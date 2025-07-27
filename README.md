@@ -1,2 +1,2 @@
-# ecommerce-frontend-design.
+# frontend-design.
 Ecommerce website 
